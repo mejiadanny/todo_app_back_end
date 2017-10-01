@@ -17,7 +17,7 @@ class TodoController < ApplicationController
            @todo_description = "Conduct research"
            @todo_pomodoro_estimate = "5"
         elsif todo_id == '5'
-           @todo_description = "Do sslaundry"
+           @todo_description = "Do laundry"
            @todo_pomodoro_estimate = "4"
         elsif todo_id == '6'
            @todo_description = "Read articles"
