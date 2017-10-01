@@ -1,47 +1,13 @@
-<h1>
-TODO List
-    </h1>
+<h1>TODO List</h1>
 
     <ul class="card">
       <li>
-        <input type="checkbox" name=""/>
-        <a href="show/1">Visit recycling center</a>
-        <span class="pomodoro-estimate">6 Pomodoros</span>
-      </li>
-      <li>
-        <input type="checkbox" name=""/>
-        <a href="show/2">Go home</a>
-        <span class="pomodoro-estimate">2 Pomodoros</span>
-      </li>
-      <li>
-        <input type="checkbox" name=""/>
-        <a href="show/3">Do HW</a>
-        <span class="pomodoro-estimate">6 Pomodoros</span>
-      </li>
-      <li>
-        <input type="checkbox" name=""/>
-       <a href="show/4">Conduct research</a>
-        <span class="pomodoro-estimate">5 Pomodoro</span>
-      </li>
-      <li>
-        <input type="checkbox" name=""/>
-       <a href="show/5">Do laundry</a>
-        <span class="pomodoro-estimate">4 Pomodoros</span>
-      </li>
-      <li>
-        <input type="checkbox" name=""/>
-        <a href="show/6">Read articles</a>
-        <span class="pomodoro-estimate">3 Pomodoro</span>
-      </li>
-      <li>
-        <input type="checkbox" name=""/>
-        <a href="show/7">Pick up cousin</a>
-        <span class="pomodoro-estimate">1 Pomodoros</span>
+        <input type ="checkbox" name=""/>
+        <a href = "show/<%= todo.id %>"><%= todo.description %></a>
+        <span class="pomodoro-estimate small-pomodoro-estimate"><%= todo.pomodoro_estimate %></span>
       </li>
     </ul>
-
-    <div id="new-todo-block">
-      <input class="text-input" id="new-todo-description" type="text" placeholder="Add a new todo...">
-      <input class="text-input" id="new-pomodoro-estimate" type="number" placeholder="Pomodoro estimate...">
-      <input class="button" id="add-new-todo-button" type="submit" value="Add todo">
-    </div>
+    
+      <div id ="new-todo-block">
+        <a href ="/todo/new" class="button add-new-todo-button" id="add-new-todo-button">Add a todo</a>
+      </div>
